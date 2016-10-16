@@ -9,7 +9,6 @@ def example_basic():
 
 
 def example_laps():
-    i = 0
     with ttt("You can't fill your lifetime need of sleep in one go") as t:
         for i in range(5):
             sleep(0.02)
