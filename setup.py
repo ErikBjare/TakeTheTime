@@ -2,13 +2,13 @@
 
 from setuptools import setup
 
-setup(name='TTT',
-      version='0.1',
+setup(name='TakeTheTime',
+      version='0.2',
       description='Take The Time, a time-taking library for Python',
       author='Erik Bjäreholt',
       author_email='erik@bjareho.lt',
-      url='https://github.com/ErikBjare/TTT',
-      packages=['TTT'],
+      url='https://github.com/ErikBjare/TakeTheTime',
+      packages=['takethetime'],
       install_requires=[
           'typing'
       ])
