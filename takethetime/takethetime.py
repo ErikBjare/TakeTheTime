@@ -27,10 +27,12 @@ class takethetime:
             print("{}\n - Total duration: {}".format(self.label, timedelta(seconds=self.duration)))
             if self._laps:
                 durations_since_start = self.laps_duration_since_start()
+                lap_durations = self.lap_durations
+
+                # Print average lap time
                 print(" - Average:", timedelta(seconds=sum(durations_since_start) / len(self._laps)))
 
                 # Print each lap
-                lap_durations = self.lap_durations  # Time between each lap
                 for i, time_since_start in enumerate(durations_since_start):
                     print(" - Lap #{}: {} (+{})".format(i, timedelta(seconds=time_since_start), timedelta(seconds=lap_durations[i])))
 
