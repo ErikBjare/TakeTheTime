@@ -30,7 +30,7 @@ class takethetime:
                 lap_durations = self.lap_durations
 
                 # Print average lap time
-                print(" - Average:", timedelta(seconds=sum(durations_since_start) / len(self._laps)))
+                print(" - Average:", timedelta(seconds=self._avg_duration(lap_durations)))
 
                 # Print each lap
                 for i, time_since_start in enumerate(durations_since_start):
@@ -56,6 +56,14 @@ class takethetime:
     @property
     def lap_durations(self):
         return self.laps_times_to_durations([self._start, *self._laps])
+
+    @staticmethod
+    def _avg_duration(durations):
+        return sum(durations) / len(durations)
+
+    @property
+    def avg_duration(self):
+        return self._avg_duration(self.lap_durations)
 
     @property
     def duration(self):

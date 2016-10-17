@@ -1,4 +1,3 @@
-??? from here until ???END lines may have been inserted/deleted
 TakeTheTime
 ===========
 
@@ -9,7 +8,7 @@ Simple time taking library using context managers:
 
 ## Example usage
 
-Here follows some basic examples, for more, see [](./examples).
+Here follows some basic examples. For more, see the [examples](./examples) directory.
 
 ### Basic example
 
