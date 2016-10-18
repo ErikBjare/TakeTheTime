@@ -55,7 +55,7 @@ class takethetime:
 
     @property
     def lap_durations(self):
-        return self.laps_times_to_durations([self._start, *self._laps])
+        return self.laps_times_to_durations([self._start] + self._laps)
 
     @staticmethod
     def _avg_duration(durations):
