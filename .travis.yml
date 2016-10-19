@@ -10,4 +10,4 @@ install:
 
 script:
  - "python examples/examples.py"
- - "nosetests tests/"
+ - "nosetests -v tests/"

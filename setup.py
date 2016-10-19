@@ -3,7 +3,7 @@
 from setuptools import setup
 
 setup(name='TakeTheTime',
-      version='0.2',
+      version='0.3',
       description='Take The Time, a time-taking library for Python',
       author='Erik Bjäreholt',
       author_email='erik@bjareho.lt',
