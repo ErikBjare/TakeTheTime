@@ -10,5 +10,5 @@ setup(name='TakeTheTime',
       url='https://github.com/ErikBjare/TakeTheTime',
       packages=['takethetime'],
       install_requires=[
-          'typing;python_version<"3.5"'
+          'typing'
       ])
